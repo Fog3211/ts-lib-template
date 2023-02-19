@@ -1,6 +1,6 @@
 {
   "name": "ts-lib-template",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A typescript library template",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,8 @@
     "build": "tsc",
     "preversion": "npm run build",
     "postversion": "git push --follow-tags",
-    "release": "npm run build && np --no-yarn --no-tests --no-cleanup --branch main"
+    "update:version": "node ./scripts/version.js",
+    "release": "npm run update:version && npm run build"
   },
   "files": [
     "dist",
@@ -44,9 +45,11 @@
     "husky": "^8.0.3",
     "jest": "^29.4.3",
     "lint-staged": "^13.1.2",
-    "np": "^7.6.3",
     "prettier": "^2.8.4",
+    "prompts": "^2.4.2",
     "rimraf": "^4.1.2",
+    "semver": "^7.3.8",
+    "ts-node": "^10.9.1",
     "typescript": "^4.9.5"
   },
   "engines": {
