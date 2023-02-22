@@ -11,7 +11,11 @@
       "@/*": [
         "src/*"
       ],
-    }
+    },
+    "lib": [
+      "dom",
+      "esnext"
+    ]
   },
   "include": [
     "src/**/*.ts"
