@@ -32,7 +32,7 @@
   "author": "Fog3211",
   "license": "MIT",
   "devDependencies": {
-    "@tsconfig/strictest": "^1.0.2",
+    "@tsconfig/recommended": "^1.0.2",
     "@types/jest": "^29.4.0",
     "@types/node": "^18.14.0",
     "@typescript-eslint/eslint-plugin": "^5.52.0",

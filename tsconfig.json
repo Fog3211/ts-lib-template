@@ -1,12 +1,14 @@
 {
-  "extends": "@tsconfig/strictest/tsconfig.json",
+  "extends": "@tsconfig/recommended/tsconfig.json",
   "compilerOptions": {
-    "module": "ES6",
+    "module": "commonjs",
+    "target": "es5",
     "outDir": "./dist",
     "sourceMap": true,
     "baseUrl": "./",
     "declaration": true,
     "moduleResolution": "node",
+    "exactOptionalPropertyTypes": false,
     "paths": {
       "@/*": [
         "src/*"
